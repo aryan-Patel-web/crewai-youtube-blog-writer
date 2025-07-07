@@ -49,8 +49,8 @@ agents.py          # CrewAI agent definitions
 task.py            # CrewAI task definitions
 crew.py            # Orchestration script
 tool.py            # YouTube tool definition
-requirements.txt   # Python dependencies
 
+requirements.txt   # Python dependencies
 
 pip install -r requirements.txt
 crewai
@@ -78,9 +78,7 @@ python crew.py
 📝 Output
 Generates a file:
 
-cpp
-Copy
-Edit
+
 new-blog-post.md
 
 
