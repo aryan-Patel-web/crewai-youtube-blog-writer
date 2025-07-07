@@ -1,0 +1,11 @@
+crewai
+crewai-tools
+
+
+
+
+python-dotenv
+# langchain
+openai
+# crewai==0.26.10
+# crewai-tools==0.1.31
