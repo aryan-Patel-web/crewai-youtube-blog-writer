@@ -6,6 +6,7 @@ from langchain_groq import ChatGroq
 import os
 
 # Load environment variables
+
 load_dotenv()
 
 # Get API key and model name from .env
@@ -30,7 +31,7 @@ blog_researcher = Agent(
     ),
     tools=[yt_tool],
     allow_delegation=True,
-    llm=groq_llm  # ✅ Assign Groq LLM
+    llm=groq_llm  # Assign Groq LLM
 )
 
 # Blog writer agent
@@ -45,5 +46,5 @@ blog_writer = Agent(
     ),
     tools=[yt_tool],
     allow_delegation=False,
-    llm=groq_llm  # ✅ Assign Groq LLM
+    llm=groq_llm  #  Assign Groq LLM
 )

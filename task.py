@@ -4,6 +4,7 @@ from tool import yt_tool
 from agents import blog_researcher, blog_writer
 
 # Research task
+
 research_task = Task(
     description="Identify the video {topic} and get detailed information about it from the channel.",
     expected_output="A comprehensive 3-paragraph report based on the video content on {topic}.",
