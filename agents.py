@@ -10,16 +10,19 @@ import os
 load_dotenv()
 
 # Get API key and model name from .env
+
 groq_api_key = os.getenv("GROK_API_KEY")
 groq_model = os.getenv("GROQ_MODEL_NAME", "gemma-7b-it")
 
 # Initialize Groq LLM
+
 groq_llm = ChatGroq(
     groq_api_key=groq_api_key,
     model_name=groq_model
 )
 
 # Blog researcher agent
+
 blog_researcher = Agent(
     role='Blog Researcher from YouTube Videos',
     goal='Get the relevant video transcription for the topic {topic} from the provided YouTube channel',
